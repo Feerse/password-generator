@@ -1,0 +1,11 @@
+.c1 {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.password {
+	cursor: text;
+}
+
+.btn {
+	transition: 0.2s ease-in-out;
+}

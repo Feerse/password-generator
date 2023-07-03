@@ -1,0 +1,14 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "A simple password generator",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Feerse",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

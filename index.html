@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="src/bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-dark-subtle">
+		<!-- MAIN CONTAINER -->
+		<div
+			class="container d-flex justify-content-center min-vh-100 align-items-center">
+			<!-- CONTAINER 1 -->
+			<div class="d-flex flex-column bg-body-tertiary p-5 rounded c1">
+				<h1 class="fw-bold">PASSWORD GENERATOR</h1>
+				<hr />
+				<!-- FORM CONTAINER -->
+				<form class="d-flex flex-column gap-2 mt-3" id="formId">
+					<!-- PASSWORD LENGTH INPUT -->
+					<label for="passwordLength" class="text-uppercase fw-bold"
+						>Password length</label
+					>
+					<input
+						class="form-control"
+						id="passwordLength"
+						type="number"
+						required />
+
+					<div class="row mt-3">
+						<div class="col">
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="uppercaseCheck"
+									checked />
+								<label class="form-check-label">Uppercase</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="lowercaseCheck"
+									checked />
+								<label class="form-check-label">Lowercase</label>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="numbersCheck"
+									checked />
+								<label class="form-check-label">Numbers</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="symbolsCheck"
+									checked />
+								<label class="form-check-label">Symbols</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- GENERATE BUTTON -->
+					<button
+						class="btn btn-dark text-uppercase mt-3 fw-bold"
+						onclick="getPassword()"
+						type="submit">
+						generate password
+					</button>
+
+					<!-- PASSWORD OUTPUT -->
+					<label for="password" class="text-uppercase mt-3 fw-bold"
+						>Password output</label
+					>
+					<input class="form-control password" id="password" disabled />
+
+					<!-- COPY & SAVE BUTTON -->
+					<button
+						class="btn btn-warning text-uppercase mt-3 fw-bold"
+						onclick="copyPassword()"
+						id="copyButton"
+						disabled>
+						copy password
+					</button>
+					<a
+						class="btn btn-primary disabled text-uppercase mt-3 fw-bold"
+						onclick="savePassword()"
+						id="saveButton">
+						save password
+					</a>
+				</form>
+			</div>
+		</div>
+
+		<!-- SCRIPT -->
+		<script src="src/bootstrap.bundle.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
