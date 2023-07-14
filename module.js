@@ -1,1 +1,1 @@
-import './dist/boxicons.js';
+import './dist/js/boxicons.js';
