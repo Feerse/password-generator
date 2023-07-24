@@ -7,6 +7,14 @@ body {
 	overflow: hidden;
 }
 
+.github-a {
+	transition: 0.1s ease-in-out;
+}
+
+.github-a:hover {
+	transform: scale(1.12);
+}
+
 .c1 {
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -19,11 +27,7 @@ body {
 	transition: 0.2s ease-in-out;
 }
 
-.footer {
+footer {
 	bottom: 0;
 	right: 0;
-}
-.footer-c {
-	bottom: 0;
-	left: 0;
 }
