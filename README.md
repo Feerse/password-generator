@@ -5,5 +5,6 @@ A simple password generator with HTML, Javascript, &amp; Bootstrap.
 
 
 ## Screenshot
-![image](https://github.com/Feerse/password-generator/assets/79497064/75302c21-8be0-40b8-b2ee-ac58f93bbbc2)
+![image](https://github.com/Feerse/password-generator/assets/79497064/7c17c175-f341-48f6-b783-7eaa864bcc3a)
+
 
